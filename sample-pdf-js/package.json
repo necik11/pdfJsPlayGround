@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "webpack": "^5.91.0"
+  },
+  "name": "sample-pdf",
+  "version": "1.0.0",
+  "main": "main.js",
+  "devDependencies": {
+    "webpack-cli": "^5.1.4"
+  },
+  "scripts": {
+    "build": "webpack"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
