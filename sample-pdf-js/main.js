@@ -1,7 +1,7 @@
 import * as pdfjsLib from "./pdf.mjs";
 // If absolute URL from the remote server is provided, configure the CORS
 // header on that server.
-var url = 'https://pdftron.s3.amazonaws.com/downloads/pl/Chart_.Vector.pdf';
+var url = 'https://raw.githubusercontent.com/necik11/pdfJsPlayGround/4b4dd7d7612599b2368e142bac7fd7317db51ac0/brokenPDF.pdf';
 
 // Loaded via <script> tag, create shortcut to access PDF.js exports.
 // var { pdfjsLib } = globalThis;
@@ -18,7 +18,7 @@ loadingTask.promise.then(function (pdf) {
     // Fetch the first page
     var pageNumber = 1;
     pdf.getPage(pageNumber).then(function (page) {
-        console.log('Page loaded');
+        console.log('Page loaded test2');
 
         var scale = 1;
         var viewport = page.getViewport({ scale: scale });
@@ -36,7 +36,7 @@ loadingTask.promise.then(function (pdf) {
         };
         var renderTask = page.render(renderContext);
         renderTask.promise.then(function () {
-            console.log('Page rendered');
+            console.log('Page rendered Test2');
         });
     });
 }, function (reason) {
