@@ -1,6 +1,6 @@
 import * as React from "react";
 // import "../assets/dev";
-import "../assets/proud";
+import "../assets/prod";
 
 export interface IProps {
     neco?: string;
